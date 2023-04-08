@@ -1,0 +1,32 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCDemo {
+	public static void main(String args[]) {
+		String url="jdbc:mysql://localhost:3307/employees_database";
+		try {
+			//establish conn object
+			Connection con=DriverManager.getConnection(url,"root", "DhruvMittal@99");
+			//statement obj to send to the database
+			Statement st= con.createStatement();
+			//execute the statement obj
+			int row=st.executeUpdate("insert into employees_tbl values(100,'Michael','Sales',5500);\r\n"
+					+ "insert into employees_tbl values(200,'Cassandra','Technology',6000);\r\n"
+					+ "insert into employees_tbl values(300,'Samuel','Technology',7000);\r\n"
+					+ "insert into employees_tbl values(400,'John','Marketing',9500);\r\n"
+					+ "insert into employees_tbl values(500,'Beth','Technology',6500);\r\n"
+					+ "insert into employees_tbl values(600,'Peter','HR',5000);\r\n"
+					+ "insert into employees_tbl values(700,'Romeo','Legal',5400);");
+//			while(resultset.next()) {
+//				System.out.println(resultset.getString("salary"));
+//			}
+			System.out.println("Insert executed "+row);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Error while Insertion");
+		}
+	}
+}

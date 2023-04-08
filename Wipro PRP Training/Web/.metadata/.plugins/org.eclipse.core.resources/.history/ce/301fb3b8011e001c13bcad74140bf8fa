@@ -1,0 +1,10 @@
+package com.learn.spring;
+
+public class HappyFortuneService implements FortuneService {
+	public String getFortune() {
+		int a[]= {1,2,3};
+		int rnd=new Random().nextInt(a.length);
+		
+		return a[rnd];
+	}
+}

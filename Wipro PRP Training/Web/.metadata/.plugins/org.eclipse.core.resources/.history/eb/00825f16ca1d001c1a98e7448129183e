@@ -1,0 +1,26 @@
+package com.learn.spring;
+
+public class CricketCoach implements Coach {
+	private FortuneService fortuneservice;
+	
+	public CricketCoach() {
+		System.out.println("Inside CricketCoach no-arg construct");
+	}
+	
+	//setter method for injection
+	public void setFortuneservice(FortuneService fortuneservice) {
+		System.out.println("Inside CricketCoach setter method");
+
+		this.fortuneservice = fortuneservice;
+	}
+
+	@Override
+	public String getdailyWorkout() {
+		return "Practice Batting and Ground Fielding";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return "Hit a Six "+fortuneservice.getFortune();
+	}
+}

@@ -1,0 +1,43 @@
+public static Connection getDBConnection()
+    {
+        try {
+            Class.forName("org.h2.Driver");
+        } catch (ClassNotFoundException cnfex) {
+            // TODO Auto-generated catch block
+            System.out.println("Driver error");
+        }
+        Connection con=null;
+        try {
+            con = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
+        } catch (SQLException sqlex) {
+            // TODO Auto-generated catch block
+            System.out.println("Sql Connection error");
+        }
+        return con;
+    }
+    
+    public boolean addEmployee(Employee e) {
+        boolean sts = false;
+        // code
+        if (e.geteCode() > 1000) {
+            //empList.add(e);
+            Connection con=getDBConnection();
+            try {
+                PreparedStatement ps=con.prepareStatement("insert into emp(empno,ename,sal)  values(?,?,?)");
+                ps.setInt(1, e.geteCode());
+                ps.setString(2, e.getName());
+                ps.setInt(3,e.getSal());
+                int recCount=ps.executeUpdate();
+                if(recCount==1)
+                    sts=true;
+            } catch (SQLException sqlexc) {
+                System.out.println(sqlexc.g
+from Athma M to everyone:    1:51 PM
+} catch (SQLException sqlexc) {
+                System.out.println(sqlexc.getMessage());
+                sts=false;
+            }
+            sts = true;
+        }
+        return sts;
+    }

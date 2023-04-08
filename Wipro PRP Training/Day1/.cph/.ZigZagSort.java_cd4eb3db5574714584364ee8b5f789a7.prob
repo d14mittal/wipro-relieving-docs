@@ -1,0 +1,1 @@
+{"name":"Local: ZigZagSort","url":"a:\\Wipro PRP Training\\Day1\\ZigZagSort.java","tests":[{"id":1628593304663,"input":"7\n4 3 7 8 6 2 1","output":"3 7 4 8 2 6 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"a:\\Wipro PRP Training\\Day1\\ZigZagSort.java","group":"local","local":true}

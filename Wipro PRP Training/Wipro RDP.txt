@@ -1,0 +1,39 @@
+Account Reset:
+https://passwordreset.microsoftonline.com
+Authenticator App issue:
+https://aka.ms/mfasetup
+Wipro Mailbox access :
+https://webmail.wipro.com/owa
+https://outlook.office365.com
+Mywipro Portal access :
+https://mywipro.wipro.com
+To update details in My wipro
+myWipro → myData → myoffice details
+To Raise Helpline Ticket :
+https://helpline.wipro.com
+CrowdStrike Installation for Personal Machines
+Step 1: Go to the link to download the sensor:
+https://assets-public.falcon.crowdstrike.com/fah/WindowsSensorHomeUse.exe
+
+Step 2: Click on the file to install it
+Step 3: Click the checkbox to agree License Agreement and enter the Verification Code  provided by concerned team:
+Click on Install
+Progress of installation can be seen at the top of the window:
+Step 4: Verify the sensor is installed successfully:
+Open Control Panel and navigate to Programs and Features and check
+ 
+Operating System should be either Windows10 Ent/Pro/Ultimate along with Administration 
+Helpline Number: 1800 212 9625
+1800 212 9625 
+from Ashutosh_Kumar_Sahoo_20694548 to everyone:    11:06 AM
+•  Helpline team tollfree number - 1800 212 9625 ; Time - 9:00 AM - 9:00PM 
+
+Laptop problems
+sushmita.biswas1@wipro.com
+
+murali.krishna35@wipro.com
+murali.krishna35@wipro.com
+muralidharan.punniyakodi@wipro.com
+
+HR
+sanchita.saha@wipro.com

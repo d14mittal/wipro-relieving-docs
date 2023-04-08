@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+A:\Wipro PRP Training\Web\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2595404656.index
+922575783.index
+334636579.index
+107573622.index
+3888181780.index
+896745807.index
